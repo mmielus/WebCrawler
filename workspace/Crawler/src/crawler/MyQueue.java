@@ -31,7 +31,7 @@ public class MyQueue implements DownloadQueue, WWWPageDownloader, VisitedPages {
 
 	public String downloadPage(String pageURL) throws DownloaderException {
 		BufferedReader br = null;
-		String result = "";
+		String result = null;
 		String line;
 		try {
 			URL u = new URL(pageURL);
